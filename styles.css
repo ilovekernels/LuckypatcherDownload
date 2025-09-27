@@ -1,0 +1,182 @@
+/* Reset Básico e Fontes */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Fundo cinza claro */
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Estrutura */
+header {
+    background-color: #ff9800; /* Cor Laranja - inspirada no ícone do app */
+    color: white;
+    padding: 40px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #bbb;
+    padding: 15px 20px;
+    margin-top: 40px;
+    font-size: 0.85em;
+}
+
+/* Seção de Download */
+.download-section {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.download-section h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.description {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Botão de Download */
+.download-button {
+    display: inline-flex; /* Permite ícone e texto lado a lado */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #4CAF50; /* Cor Verde vibrante */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.3em;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+/* Ícone de Android (simulado com texto/emoji) */
+.icon-android::before {
+    content: "🤖"; /* Um emoji simples para simular um ícone */
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.file-info {
+    display: block;
+    font-size: 0.7em;
+    font-weight: 400;
+    margin-left: 10px;
+    opacity: 0.8;
+}
+
+/* Seção de Aviso */
+.warning {
+    text-align: left;
+    background-color: #ffebee; /* Fundo vermelho claro */
+    border: 1px solid #e57373; /* Borda vermelha */
+    color: #d32f2f; /* Texto vermelho escuro */
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.warning h3 {
+    color: #c62828;
+    margin-top: 0;
+    border-bottom: 1px solid #e57373;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.warning ul {
+    list-style: disc;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.warning li {
+    margin-bottom: 5px;
+}
+
+/* Responsividade Básica */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .download-button {
+        width: 100%;
+        padding: 15px 0;
+    }
+}
+
+
+/* Estilo para a nova seção de Instruções */
+.instructions-section {
+    max-width: 600px;
+    margin: 40px auto 20px auto;
+    text-align: left;
+    background-color: #e8f5e9; /* Fundo verde claro para destacar */
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 5px solid #4CAF50; /* Borda lateral verde */
+}
+
+.instructions-section h2 {
+    color: #388e3c; /* Título verde escuro */
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.instructions-section ol {
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.instructions-section li {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.instructions-section strong {
+    font-weight: 700;
+}
+
+.tip {
+    font-style: italic;
+    color: #666;
+    margin-top: 20px;
+    border-top: 1px dashed #a5d6a7;
+    padding-top: 10px;
+}
